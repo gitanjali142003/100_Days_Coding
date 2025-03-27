@@ -1,0 +1,39 @@
+Question: write a program to print given number is armstrong or not.
+
+#CODE
+import java.util.*;
+public class armstrongno {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(isArmstrong(num)){
+            System.out.println("Armstrong no");
+        }else{
+            System.out.println("no Armstrong");
+        }
+
+    }
+    public static boolean isArmstrong(int num){
+        int temp=0;
+        int sum=0;
+        int digit=Integer.toString(num).length();
+        while(temp>0){
+           int ans=temp%10;
+           sum+=Math.pow(ans,digit);
+           temp/=10;
+           
+
+        }
+        return true;
+        
+
+
+    }
+    
+    
+}
+
+
+output:-
+121
+Armstrong no
