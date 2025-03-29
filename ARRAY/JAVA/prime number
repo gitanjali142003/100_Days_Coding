@@ -1,1 +1,41 @@
-Question 
+Question:- Write a program to print the given number is Prime or Not.
+
+# Code
+
+/*THIS IS PRIME NO PROGRAM 
+ INPUT=5
+ */
+import java.util.*;
+public class primeno{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(isprime(n)){
+            System.out.println("The given no is prime");
+        }else{
+            System.out.println("The given no. is not prime");
+        }
+
+
+
+    }
+
+    public static boolean isprime(int n){
+        //check no is not less than or equal to 1
+        if(n<=1){
+            return false;
+        }
+        //use for loop for iterating over loop
+        for(int i=2;i<n;i++){
+            if(n % i == 0){
+                return false;
+            }
+        }
+        return true;
+
+    }
+}
+
+output:-
+14
+The given no. is not prime
