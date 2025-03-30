@@ -1,3 +1,9 @@
+Question:GIVEN A ROOT CONTAINING FOUR DIRECTIONS(E,W,N,S)
+        FIND A SHORTEST PATH
+       FORMULA FOR FINDING SHORTEST PATH=MATH.SQRT(X2+Y2)
+        LOGIC-> N->Y++,S->Y--,W->X--,E->X++
+             
+
 public class shortest_path {
     public static void main(String args[]){
         String path="WSNWNSNNS";
