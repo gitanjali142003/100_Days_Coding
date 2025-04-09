@@ -1,0 +1,51 @@
+Question:- write a program to make the given sentence each first character of string as capital
+
+# Code:
+public class first_character {
+
+    public static void main(String args[]){
+        String str="i live in lonavala";
+        String ans=uppercase_first_char(str);
+        System.out.println(ans);
+
+    }
+
+    public static String uppercase_first_char(String str){
+       /*  1.create the stringbuilder class
+        2.first character make it capital and add to the stringbuilder
+        3. for loop 1 to String.lengh
+        4.if(str.charAt(i)==' ' && i<str.length()-1)
+
+        {
+            sb.append(str.charAt(i))
+            i++
+            sb.character.toUppercase(str.charAt(i));
+        }else{
+            sb.append(str.charAt(i))
+        }
+
+        }
+        return sb.toString;
+        */
+
+
+        StringBuilder sb=new StringBuilder();
+        char ch=Character.toUpperCase(str.charAt(0));
+        sb.append(ch);
+        for(int i=1;i<str.length();i++){
+            if(str.charAt(i)==' '  && i<str.length()-1){
+                sb.append(str.charAt(i));
+                i++;
+                sb.append(Character.toUpperCase(str.charAt(i)));
+
+            } else{
+                sb.append(str.charAt(i));
+            }
+        }
+        return sb. toString();
+
+    }
+}
+    
+output:I Live In Lonavala
+PS D:\100days of practice\striverAtoZ\practice>
