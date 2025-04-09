@@ -1,0 +1,28 @@
+Question: Write a program to find out the largest string in given String array.
+# Code
+public class largeststring{
+    public static void main(String args[]){
+
+        String [] str={"Apple","Banana","mango"};
+        String ans=largeststring1(str);
+        System.out.println(ans);
+
+
+    }
+    public static String largeststring1(String []str){
+        String largest=str[0];
+        for(int i=0;i<str.length;i++){
+            if(largest.compareTo(str[i])<0){
+                largest=str[i];
+                
+            }
+        
+        }
+        return largest;
+        
+    }
+
+}
+
+output:-mango Is the largest string in in Given String array
+PS D:\100days of practice\striverAtoZ\practice>
